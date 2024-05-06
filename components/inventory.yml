@@ -1,0 +1,35 @@
+- description: ''
+  host_filter: null
+  kind: ''
+  name: Demo Inventory
+  natural_key:
+    name: Demo Inventory
+    organization: {name: Default, type: organization}
+    type: inventory
+  organization: {name: Default, type: organization}
+  prevent_instance_group_fallback: false
+  related:
+    groups: []
+    hosts:
+    - description: ''
+      enabled: true
+      instance_id: ''
+      inventory:
+        name: Demo Inventory
+        organization: {name: Default, type: organization}
+        type: inventory
+      name: localhost
+      natural_key:
+        inventory:
+          name: Demo Inventory
+          organization: {name: Default, type: organization}
+          type: inventory
+        name: localhost
+        type: host
+      related:
+        groups: []
+      variables: 'ansible_connection: local
+
+        ansible_python_interpreter: ''{{ ansible_playbook_python }}'''
+    labels: []
+  variables: ''
